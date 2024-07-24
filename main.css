@@ -1,0 +1,81 @@
+  body {
+      text-align: center;
+      background-color: darkslategray;
+      max-width: 100%;
+      max-height: 100%;
+  }
+
+  header {
+      background-image: url(Logos/bvgr.jpg);
+      border: 2px solid red;
+      border-radius: 10px;
+      height: 600px;
+      max-width: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+  }
+
+
+  main {
+      border: 2px solid red;
+      border-radius: 10px;
+      height: inherit;
+  }
+
+  footer {
+      border: 2px solid red;
+      height: 400px;
+      border-radius: 10px;
+  }
+
+  img {
+      border: 2px solid red;
+      border-radius: 10px;
+  }
+
+  h1 {
+      color: white;
+      font-size: 50px;
+      position: relative;
+      top: 100px;
+  }
+
+  .icons img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      margin: 5px;
+      border-radius: 8px;
+      transition: transform 0.2s;
+  }
+
+  .icons img:hover {
+      transform: scale(1.1);
+  }
+
+  img:hover {
+      transform: scale(1.1);
+  }
+
+  .image-container {
+      position: relative;
+      display: inline-block;
+  }
+
+  .image-container img {
+      width: 100%;
+      height: auto;
+  }
+
+  .image-container .overlay-text {
+      position: absolute;
+      top: 90%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+      text-align: center;
+  }
