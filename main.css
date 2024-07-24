@@ -14,6 +14,7 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
+      padding: 10px;
   }
 
 
@@ -21,12 +22,14 @@
       border: 2px solid red;
       border-radius: 10px;
       height: inherit;
+      padding: 10px;
   }
 
   footer {
       border: 2px solid red;
       height: 400px;
       border-radius: 10px;
+      padding: 10px;
   }
 
   img {
@@ -56,6 +59,10 @@
 
   img:hover {
       transform: scale(1.1);
+  }
+
+  img {
+      transition: transform 0.3s ease;
   }
 
   .image-container {
