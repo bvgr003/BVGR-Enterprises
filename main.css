@@ -7,7 +7,7 @@
 
   header {
       background-image: url(Logos/bvgr.jpg);
-      border: 2px solid red;
+      border: 2px solid yellow;
       border-radius: 10px;
       height: 600px;
       max-width: 100%;
@@ -19,14 +19,14 @@
 
 
   main {
-      border: 2px solid red;
+      border: 2px solid yellow;
       border-radius: 10px;
       height: inherit;
       padding: 10px;
   }
 
   footer {
-      border: 2px solid red;
+      border: 2px solid yellow;
       height: 400px;
       border-radius: 10px;
       padding: 10px;
@@ -40,8 +40,6 @@
   h1 {
       color: white;
       font-size: 50px;
-      position: relative;
-      top: 100px;
   }
 
   .icons img {
