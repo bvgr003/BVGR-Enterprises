@@ -42,10 +42,15 @@
       border-radius: 10px;
   }
 
-  h1 {
-      color: white;
-      font-size: 50px;
-  }
+h1,
+h2 {
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    letter-spacing: normal;
+    word-spacing: normal;
+}
 
   .icons img {
       width: 120px;
