@@ -1,0 +1,85 @@
+/* Styling for the chat button */
+#chat-button {
+    position: fixed;
+    bottom: 40px;
+    right: 35px;
+    width: 100px;
+    height: 100px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+#chat-button img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+#chat-button:hover img {
+    background-color: #0056b3;
+    border-radius: 50%;
+}
+
+/* Styling for the chat container */
+.chat-container {
+    display: none;
+    position: fixed;
+    bottom: 150px;
+    right: 20px;
+    height: 500px;
+    width: 400px;
+    background-color: #FF7F50;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    padding-bottom: 50px;
+    font-family: Arial, sans-serif;
+    z-index: 1000;
+    margin-top: 10px;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+/* Styling for the chat messages */
+.message {
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.user {
+    background-color: #008080;
+    color: white;
+}
+
+.bot {
+    background-color: cadetblue;
+    color: #333;
+}
+
+/* Styling for the user input and send button */
+#user-input {
+    width: calc(100% - 70px);
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#send-button {
+    position: relative;
+    top: 20px;
+    height: 50px;
+    width: 100px;
+    padding: 3px 8px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}

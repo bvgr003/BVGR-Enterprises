@@ -1,0 +1,252 @@
+body {
+    text-align: center;
+    background-color: darkslategray;
+}
+
+img {
+    height: 90%;
+    width: 90%;
+    object-fit: contain;
+    margin: 0 auto;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-right: 25px;
+}
+
+.img-container {
+    font-size: 0;
+    line-height: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container img {
+    display: inline-block;
+    vertical-align: top;
+    /* Aligns images to the top */
+    margin: 0 0px 0px 0;
+}
+
+.img-container img:nth-child(2) {
+    margin-right: 0;
+}
+
+button {
+    padding: 10px;
+    border-radius: 10px;
+    height: 100px;
+    width: 200px;
+}
+
+header {
+    background-image: url(Logos/bvgr.jpg);
+    border: 2px solid yellow;
+    border-radius: 10px;
+    height: 650px;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+}
+
+main {
+    text-align: center;
+}
+
+
+.footer {
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 700px;
+    width: 100%;
+}
+
+.contact-info {
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 500px;
+    width: 100%;
+}
+
+.profile-border,
+.border-services,
+.border,
+.img-border {
+    border: 2px solid white;
+    border-radius: 10px;
+    height: auto;
+    padding: 5px;
+    padding-bottom: 40px;
+}
+
+h1,
+h2 {
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    letter-spacing: normal;
+    word-spacing: normal;
+}
+
+p,
+li {
+    font-size: 45px;
+    color: white;
+    text-align: justify;
+    padding: 30px;
+    letter-spacing: normal;
+    word-spacing: normal;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+#scrollToTop {
+    display: none;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    z-index: 99;
+    border: transparent;
+    outline: none;
+    background-color: transparent;
+    color: transparent;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 35px;
+    height: 135px;
+}
+
+#scrollToTop img {
+    width: 95%;
+    height: 95%;
+    border-radius: 50%;
+}
+
+.badges {
+    height: 500px;
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.badges-border,
+.social-media {
+    border: 2px solid white;
+    height: 750px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: auto;
+    text-align: center;
+    border-radius: 10px;
+    display: block;
+}
+
+.social-media {
+    border: 2px solid white;
+    height: 300px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: auto;
+    text-align: center;
+    border-radius: 10px;
+    display: block;
+}
+
+.social-media img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin: 5px;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.social-media img:hover {
+    transform: scale(1.1);
+}
+
+
+.google-border {
+    border: 2px solid white;
+    border-radius: 10px;
+    text-align: center;
+    height: 300px;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img {
+    display: block;
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 10px;
+    font-size: 35px;
+    text-align: center;
+    width: 100%;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+img {
+    transition: transform 0.3s ease;
+}
