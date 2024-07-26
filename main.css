@@ -32,6 +32,11 @@
       padding: 10px;
   }
 
+  hr {
+      border: 2px solid red;
+      border-radius: 10px;
+  }
+
   img {
       border: 2px solid red;
       border-radius: 10px;
