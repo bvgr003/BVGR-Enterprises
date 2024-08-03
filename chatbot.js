@@ -49,7 +49,7 @@ function getBotResponse(userInput) {
         userInput.includes('specializations') ||
         userInput.includes('specialize') ||
         userInput.includes('cost')) {
-        response = "At Virtual Tech Solutions NI, we specialize in Full Stack Software Development, IT Support, Machine Learning & AI, Digital Marketing & E-commerce, and WordPress Design/Development.";
+        response = "At BVGR Enterprises, we specialize in Full Stack Software Development, IT Support, Machine Learning & AI, Digital Marketing & E-commerce, and WordPress Design/Development.";
         // Location response message
     } else if (userInput.includes('location') ||
         userInput.includes('located') ||
@@ -66,7 +66,7 @@ function getBotResponse(userInput) {
         // Company info response message
     } else if (userInput.includes('company') || userInput.includes('company') ||
         userInput.includes('business')) {
-        response = "Virtual Tech Solutions NI provides a comprehensive suite of services to meet your digital needs. Our services offered include Full Stack Software Development, AI-Assisted Solutions, IT Support, Google Digital Marketing & E-commerce, WordPress Design/Development and Custom Software Development!";
+        response = "BVGR Enterprises provides a comprehensive suite of services to meet your digital needs. Our services offered include Full Stack Software Development, AI-Assisted Solutions, IT Support, Google Digital Marketing & E-commerce, WordPress Design/Development and Custom Software Development!";
         // Goodbye response message
     } else if (userInput.includes('bye') || userInput.includes('goodbye') || userInput.includes('chow') ||
         userInput.includes('thank you')) {
@@ -84,7 +84,7 @@ function getBotResponse(userInput) {
         userInput.includes('fuck off') ||
         userInput.includes('kiss my ass') ||
         userInput.includes('fuck yourself')) {
-        response = "I understand that you are upset, and I apologize for any inconvenience you may have experienced. At Virtual Tech Solutions NI, we value our customers and strive to provide the best service possible.To better assist you and resolve the issue promptly, please call us at 619-693-6911 or email us at callassist18@gmail.com? We're committed to addressing your concerns and ensuring your satisfaction.Thank you for your patience and understanding.";
+        response = "I understand that you are upset, and I apologize for any inconvenience you may have experienced. At BVGR Enterprises, we value our customers and strive to provide the best service possible.To better assist you and resolve the issue promptly, please call us at 619-693-6911 or email us at callassist18@gmail.com? We're committed to addressing your concerns and ensuring your satisfaction.Thank you for your patience and understanding.";
     }
     // Initial message answer in no understanding
     else {
