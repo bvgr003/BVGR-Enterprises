@@ -84,7 +84,7 @@ function getBotResponse(userInput) {
         userInput.includes('fuck off') ||
         userInput.includes('kiss my ass') ||
         userInput.includes('fuck yourself')) {
-        response = "I understand that you are upset, and I apologize for any inconvenience you may have experienced. At BVGR Enterprises, we value our customers and strive to provide the best service possible.To better assist you and resolve the issue promptly, please call us at 619-693-6911 or email us at callassist18@gmail.com? We're committed to addressing your concerns and ensuring your satisfaction.Thank you for your patience and understanding.";
+        response = "I understand that you are upset and I apologize for any inconvenience you may have experienced. At BVGR Enterprises, we value our customers and strive to provide the best service possible.To better assist you and resolve the issue promptly, please call us at 619-693-6911 or email us at callassist18@gmail.com? We're committed to addressing your concerns and ensuring your satisfaction.Thank you for your patience and understanding.";
     }
     // Initial message answer in no understanding
     else {
