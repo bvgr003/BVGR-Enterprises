@@ -112,7 +112,7 @@ li {
 #scrollToTop {
     display: none;
     position: fixed;
-    bottom: 0px;
+    bottom: 10px;
     left: 0px;
     z-index: 99;
     border: transparent;
@@ -129,7 +129,8 @@ li {
 #scrollToTop img {
     width: 95%;
     height: 95%;
-    border-radius: 50%;
+    border: none;
+    border-radius: 10px;
 }
 
 .badges {
