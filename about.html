@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="">
     <link rel="stylesheet" href="main2.css">
     <link rel="stylesheet" href="curtain.css">
+    <link rel="stylesheet" href="chatbot.css">
     <script defer src="curtain.js"></script>
+    <script defer src="chatbot.js"></script>
+    <script defer src="scroll.js"></script>
     <title>BVGR Enterprises</title>
 </head>
 
@@ -49,8 +52,8 @@
     <hr><br>
     <main>
         <div class="image-container">
-                <img style="width: 743px; height: 417px;" src="Logos/bvgr.jpg" alt="Full Stack Development">
-                <div style="font-size: 50px;" class="overlay-text">ABOUT</div>
+            <img style="width: 743px; height: 417px;" src="Logos/bvgr.jpg" alt="Full Stack Development">
+            <div style="font-size: 50px;" class="overlay-text">ABOUT</div>
         </div>
         <section id="about">
             <p>Welcome to BVGR Enterprises, your trusted partner in innovative technology solutions. Founded in 2012 with a passion for excellence and a commitment to driving digital transformation, we specialize in providing cutting-edge IT services and solutions tailored to meet the unique needs of businesses and individuals alike.</p>
@@ -95,7 +98,22 @@
             <p>At BVGR Enterprises, we are more than just a technology company. We are your partners in success, dedicated to helping you navigate the digital landscape and achieve your business objectives. Join us on our journey, and let's build a brighter, more connected future together.</p>
             <br><br><br><br>
         </section>
+        <div id="chat-button">
+            <img src="Icons/chatbot.jpg" alt="Chatbot Icon">
+        </div>
 
+        <!-- Chat container -->
+        <div class="chat-container" id="chat-container">
+            <h1>Chat with Us</h1>
+            <div id="chat-box"></div>
+            <input type="text" id="user-input" placeholder="Type your message...">
+            <button id="send-button" onclick="sendMessage()">Send</button>
+        </div>
+        <div id="scrollToTop">
+            <img style="border: none;" src="Icons/scroll.png" alt="Chatbot Icon">
+        </div>
+        <div style="height: 0px; background-color: #1C4966;"></div>
+        <button id="scrollToTop">Top</button>
     </main>
 </body>
 
