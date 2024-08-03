@@ -65,6 +65,7 @@ function getBotResponse(userInput) {
         response = "Our services offered are Full Stack Software Development, AI-Assisted Solutions, IT Support, Google Digital Marketing & E-commerce, WordPress Design/Development and Custom Software Development!";
         // Company info response message
     } else if (userInput.includes('company') || userInput.includes('company') ||
+        userInput.includes('more') ||
         userInput.includes('business')) {
         response = "BVGR Enterprises provides a comprehensive suite of services to meet your digital needs. Our services offered include Full Stack Software Development, AI-Assisted Solutions, IT Support, Google Digital Marketing & E-commerce, WordPress Design/Development and Custom Software Development!";
         // Goodbye response message
