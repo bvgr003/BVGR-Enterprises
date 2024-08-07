@@ -6,7 +6,7 @@
   }
 
   header {
-      background-image: url(Logos/bvgr.jpg);
+      background-image: url(Logos/bvgre.png);
       border: 2px solid yellow;
       border-radius: 10px;
       height: 650px;
@@ -16,7 +16,6 @@
       background-position: center;
       padding: 10px;
   }
-
 
   main {
       border: 2px solid yellow;

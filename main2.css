@@ -47,18 +47,6 @@ button {
     width: 200px;
 }
 
-header {
-    background-image: url(Logos/bvgr.jpg);
-    border: 2px solid yellow;
-    border-radius: 10px;
-    height: 650px;
-    max-width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 10px;
-}
-
 main {
     text-align: center;
 }
