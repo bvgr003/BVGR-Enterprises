@@ -3,6 +3,10 @@
       background-color: darkslategray;
       max-width: 100%;
       max-height: 100%;
+      background-image: url();
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
   }
 
   header {
@@ -128,21 +132,3 @@
       color: white;
   }
 
-  .sign {
-      background-color: #FFA500;
-      background-image: url(Images/fullstackdeveloper.png);
-      background-size: fill;
-      background-repeat: no-repeat;
-      background-position: center;
-      color: white;
-      text-align: center;
-      margin: 20px auto;
-      width: 50%;
-      height: 100px;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      font-size: 75px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-  }
