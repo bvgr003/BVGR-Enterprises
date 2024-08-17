@@ -91,10 +91,18 @@ p,
 li {
     font-size: 45px;
     color: white;
-    text-align: justify;
-    padding: 30px;
+    text-align: left;
+    padding: 10px;
     letter-spacing: normal;
     word-spacing: normal;
+}
+
+@media (max-width: 768px) {
+    h1,
+    p,
+    address {
+        text-align: center; /* Center alignment for smaller screens */
+    }
 }
 
 #scrollToTop {
