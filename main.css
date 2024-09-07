@@ -11,7 +11,7 @@
 
   header {
       background-image: url(Logos/bvgre.png);
-      border: 2px solid yellow;
+      border: 2px solid silver;
       border-radius: 10px;
       height: 500px;
       max-width: 100%;
@@ -22,26 +22,26 @@
   }
 
   main {
-      border: 2px solid yellow;
+      border: 2px solid silver;
       border-radius: 10px;
       height: inherit;
       padding: 10px;
   }
 
   footer {
-      border: 2px solid yellow;
+      border: 2px solid silver;
       height: 450px;
       border-radius: 10px;
       padding: 10px;
   }
 
   hr {
-      border: 2px solid red;
+      border: 2px solid silver;
       border-radius: 10px;
   }
 
   img {
-      border: 2px solid red;
+      border: 2px solid silver;
       border-radius: 10px;
   }
 
@@ -99,7 +99,7 @@
   }
 
   .divisions-border {
-      border: 2px solid yellow;
+      border: 2px solid silver;
       border-radius: 10px;
 
   }
@@ -131,4 +131,3 @@
       background-color: orange;
       color: white;
   }
-
