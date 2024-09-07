@@ -72,7 +72,7 @@ function getBotResponse(userInput) {
     } else if (userInput.includes('bye') || userInput.includes('goodbye') || userInput.includes('chow') ||
         userInput.includes('thanks') ||
         userInput.includes('thank you')) {
-        response = "Goodbye! Thank you for visiting us. Please feel free to visit us anytime.";
+        response = "Thank you for visiting us. Please feel free to visit us anytime. Goodbye!";
         // Salutation response message
     } else if (userInput.includes('hi') ||
         userInput.includes('hi') ||
