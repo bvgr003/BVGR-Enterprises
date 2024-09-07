@@ -70,6 +70,7 @@ function getBotResponse(userInput) {
         response = "BVGR Enterprises provides a comprehensive suite of services to meet your digital needs. Our services offered include Full Stack Software Development, AI-Assisted Solutions, IT Support, Google Digital Marketing & E-commerce, WordPress Design/Development and Custom Software Development!";
         // Goodbye response message
     } else if (userInput.includes('bye') || userInput.includes('goodbye') || userInput.includes('chow') ||
+        userInput.includes('thanks') ||
         userInput.includes('thank you')) {
         response = "Goodbye! Thank you for visiting us. Please feel free to visit us anytime.";
         // Salutation response message
