@@ -68,11 +68,11 @@
       transform: scale(1.1);
   }
 
-.icons a {
-  text-decoration: none;
-  border: none; 
-  outline: none; 
-}
+  .icons a {
+      text-decoration: none;
+      border: none;
+      outline: none;
+  }
 
   img:hover {
       transform: scale(1.1);
@@ -110,17 +110,17 @@
 
   }
 
-.divisions a {
-  text-decoration: none;
-  border: none; 
-  outline: none; 
-}
+  .divisions a {
+      text-decoration: none;
+      border: none;
+      outline: none;
+  }
 
   .divisions img {
       width: 340px;
       height: 340px;
       object-fit: cover;
-      margin: 5px;
+      margin: 13px;
       border-radius: 8px;
       transition: transform 0.2s;
   }
