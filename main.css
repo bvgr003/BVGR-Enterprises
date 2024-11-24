@@ -143,3 +143,17 @@
       background-color: orange;
       color: white;
   }
+
+  .copyright {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+  }
+
+  .copyright p {
+      font-size: 35px;
+      margin: 0;
+  }
+
