@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="BVGR Enterprises">
+    <link rel="icon" type="img/png" href="Logos/bvgrre-logo-square.png">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main2.css">
+    <link rel="stylesheet" href="curtain.css">
+    <link rel="stylesheet" href="chatbot.css">
+    <script defer src="curtain.js"></script>
+    <script defer src="chatbot.js"></script>
+    <script defer src="scroll.js"></script>
+    <title>BVGR Enterprises</title>
+</head>
+
+<body>
+    <header>
+        <h1 style="
+    position: relative;
+    top: 100px;
+    font-size: 100px;
+    color: #00bf63;
+    text-shadow: 
+        -3px -3px 0 #000,  
+         3px -3px 0 #000,
+        -3px  3px 0 #000,
+         3px  3px 0 #000,
+        -3px  0px 0 #000,
+         3px  0px 0 #000,
+        0px -3px 0 #000,
+        0px  3px 0 #000;
+">
+            <br><br>
+        </h1>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="full-stack-software-development.html">Full Stack Software Development</a>
+                <a href="ai-and-machine-learning.html">AI and Machine Learning</a>
+                <a href="it-support.html">IT Support</a>
+                <a href="digital-marketing-ecommerce.html">Digital Marketing & E-commerce</a>
+                <a href="wordpress-design-and-development.html">WorPress Design and Development</a>
+                <a href="specializations.html"></a>
+            </div>
+        </div>
+        <span style="position: relative; left: 400px; top: -25px; bottom: 500px; font-size: 75px; color: white;" onclick="openNav()">&#9776;</span>
+    </header>
+    <br>
+    <hr><br>
+    <main>
+        <br><br>
+        <div class="image-container">
+            <img style="width: 743px; height: 417px;" src="Images/about.png" alt="About">
+            <div style="font-size: 50px;" class="overlay-text"></div>
+        </div>
+        <main>
+        <section id="investment">
+            <h3><u>INVEST WITH US</u></h3>
+            <p>BVGR Enterprises offers exclusive private stock investment opportunities designed for discerning investors seeking to diversify their portfolios with innovative and high-growth potential assets.</p>
+
+            <h3><u>BENEFITS OF INVESTING</u></h3>
+            <ul>
+                <li><strong>High Returns:</strong> Our private stock investments are structured to deliver significant returns over time.</li>
+                <li><strong>Exclusive Access:</strong> Gain access to unique investment opportunities not available to the general public.</li>
+                <li><strong>Veteran-Owned Integrity:</strong> Trust in our dedication to transparency and ethical practices in every transaction.</li>
+            </ul>
+
+            <h3><u>HOW IT WORKS</u></h3>
+            <ol>
+                <li><strong>Step 1:</strong> Contact us to learn more about our private stock options.</li>
+                <li><strong>Step 2:</strong> Review our investment portfolio and terms.</li>
+                <li><strong>Step 3:</strong> Partner with us to grow your wealth.</li>
+            </ol>
+
+            <h3><u>READY TO INVEST?</u></h3>
+            <p>Contact our team today to schedule a consultation and take the first step towards securing your financial future with BVGR Enterprises.</p>
+        </section>
+        </section>
+        <div id="chat-button">
+            <img src="Icons/chatbot.jpg" alt="Chatbot Icon">
+        </div>
+
+        <!-- Chat container -->
+        <div class="chat-container" id="chat-container">
+            <h1>Chat with Us</h1>
+            <div id="chat-box"></div>
+            <input type="text" id="user-input" placeholder="Type your message...">
+            <button id="send-button" onclick="sendMessage()">Send</button>
+        </div>
+        <div id="scrollToTop">
+            <img style="border: none;" src="Icons/scroll.png" alt="Chatbot Icon">
+        </div>
+        <div style="height: 0px; background-color: #1C4966;"></div>
+        <button id="scrollToTop">Top</button>
+    </main>
+</body>
+
+</html>
