@@ -1,24 +1,18 @@
-// JavaScript for dynamic fade effect
-        window.addEventListener('scroll', () => {
-            const scrollY = window.scrollY; // Get current scroll position
-            const fadePoint = 100; // Start fading at this scroll position
-            const maxFadePoint = 600; // Fully faded at this position
+document.addEventListener("scroll", function () {
+    const fadeElement = document.body;
+    const scrollTop = window.scrollY; // Current scroll position
+    const docHeight = document.documentElement.scrollHeight; // Total document height
+    const winHeight = window.innerHeight; // Height of the visible window
+    const fadeHeight = docHeight - winHeight; // Scrollable height
+    const fadeProgress = Math.min(scrollTop / fadeHeight, 1); // Calculate scroll progress (0 to 1)
 
-            // Calculate the interpolation factor between 0 (start) and 1 (end)
-            let fadeFactor = (scrollY - fadePoint) / (maxFadePoint - fadePoint);
-            fadeFactor = Math.max(0, Math.min(1, fadeFactor)); // Clamp between 0 and 1
+    // Apply hard transition between DarkSlateGray, Grey, and White (darker shades)
+    fadeElement.style.background = `
+        linear-gradient(
+            rgba(23, 38, 38, 1) ${fadeProgress * 33}%, /* DarkSlateGray (darker) */
+            rgba(64, 64, 64, 1) ${fadeProgress * 33 + 34}%, /* Dark Grey */
+            rgba(235, 235, 235, 1) ${fadeProgress * 33 + 67}% /* Light Grey instead of pure white */
+        )
+    `;
+});
 
-            // Start and end colors in RGB
-            const startColor = { r: 47, g: 79, b: 79 }; // darkslategray
-            const endColor = { r: 119, g: 136, b: 153 }; // lighter darkslategray (#778899)
-
-            // Interpolate between the two colors
-            const currentColor = {
-                r: Math.round(startColor.r + fadeFactor * (endColor.r - startColor.r)),
-                g: Math.round(startColor.g + fadeFactor * (endColor.g - startColor.g)),
-                b: Math.round(startColor.b + fadeFactor * (endColor.b - startColor.b))
-            };
-
-            // Apply the calculated color as the background
-            document.body.style.backgroundColor = `rgb(${currentColor.r}, ${currentColor.g}, ${currentColor.b})`;
-        });
