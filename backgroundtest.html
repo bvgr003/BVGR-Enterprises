@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Fade Background</title>
+    <style>
+        body {
+            margin: 0;
+            height: 200vh; /* Simulate long content for scrolling */
+            background-color: darkslategray;
+            transition: background-color 0.2s ease; /* Smooth transition for dynamic changes */
+        }
+
+        .content {
+            text-align: center;
+            color: white;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Scroll Down</h1>
+        <p>The background will fade to a lighter shade of darkslategray!</p>
+    </div>
+    <script>
+        // JavaScript for dynamic fade effect
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY; // Get current scroll position
+            const fadePoint = 100; // Start fading at this scroll position
+            const maxFadePoint = 600; // Fully faded at this position
+
+            // Calculate the interpolation factor between 0 (start) and 1 (end)
+            let fadeFactor = (scrollY - fadePoint) / (maxFadePoint - fadePoint);
+            fadeFactor = Math.max(0, Math.min(1, fadeFactor)); // Clamp between 0 and 1
+
+            // Start and end colors in RGB
+            const startColor = { r: 47, g: 79, b: 79 }; // darkslategray
+            const endColor = { r: 119, g: 136, b: 153 }; // lighter darkslategray (#778899)
+
+            // Interpolate between the two colors
+            const currentColor = {
+                r: Math.round(startColor.r + fadeFactor * (endColor.r - startColor.r)),
+                g: Math.round(startColor.g + fadeFactor * (endColor.g - startColor.g)),
+                b: Math.round(startColor.b + fadeFactor * (endColor.b - startColor.b))
+            };
+
+            // Apply the calculated color as the background
+            document.body.style.backgroundColor = `rgb(${currentColor.r}, ${currentColor.g}, ${currentColor.b})`;
+        });
+    </script>
+</body>
+</html>
+
