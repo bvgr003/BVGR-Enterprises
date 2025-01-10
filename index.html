@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="curtain.css">
     <link rel="stylesheet" href="chatbot.css">
     <link href="https://fonts.googleapis.com/css?family=HK+Modular" rel="stylesheet">
+    <link rel="stylesheet" href="contact-form.css">
     <script defer src="background.js"></script>
     <script defer src="scroll.js"></script>
     <script defer src="chatbot.js"></script>
     <script defer src="curtain.js"></script>
+    <script defer src="emailjs.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <title>BVGR Enterprises</title>
 </head>
 
@@ -105,7 +108,24 @@ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             <a class="contact-button" href="mailto:callassist18@gmail.com">info@bvgrenterprises.com</a>
             <br><br>
         </h2>
-        <hr><br>
+        <hr>
+        <section id="form" style="display: flex; flex-direction: column; align-items: center; text-align: center; margin: 20px auto; max-width: 500px; padding-right: 45px;">
+        <h2>Contact Form</h2>
+        <p>Send us a message directly using the form below, and we'll get back to you as soon as possible! Please also include your email in the message section for verification.</p>
+        <form id="contact-form" style="width: 100%;">
+            <label for="name" style="display: block; text-align: left;">Your Name:</label>
+            <input type="text" id="name" name="name" required style="width: 100%; padding: 8px; margin-bottom: 10px;">
+
+            <label for="email" style="display: block; text-align: left;">Your Email:</label>
+            <input type="email" id="email" name="email" required style="width: 100%; padding: 8px; margin-bottom: 10px;">
+
+            <label for="message" style="display: block; text-align: left;">Your Message:</label>
+            <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 8px; margin-bottom: 10px;"></textarea>
+
+            <button type="submit" style="padding: 10px 20px; background-color: silver; border: none; color: white; border-radius: 5px; cursor: pointer;">Send Message</button>
+        </form>
+    </section>
+       <hr><br>
         <!-- Location -->
         <div class="sign">
             <h1 style="background-image: url(Images/location.png); background-size: cover; background-repeat: no-repeat; background-position: center; background-color: #FFA500;
