@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,11 @@
     <style>
         body {
             margin: 0;
-            height: 200vh; /* Simulate long content for scrolling */
+            height: 200vh;
+            /* Simulate long content for scrolling */
             background-color: darkslategray;
-            transition: background-color 0.2s ease; /* Smooth transition for dynamic changes */
+            transition: background-color 0.2s ease;
+            /* Smooth transition for dynamic changes */
         }
 
         .content {
@@ -19,6 +22,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="content">
         <h1>Scroll Down</h1>
@@ -36,8 +40,16 @@
             fadeFactor = Math.max(0, Math.min(1, fadeFactor)); // Clamp between 0 and 1
 
             // Start and end colors in RGB
-            const startColor = { r: 47, g: 79, b: 79 }; // darkslategray
-            const endColor = { r: 119, g: 136, b: 153 }; // lighter darkslategray (#778899)
+            const startColor = {
+                r: 47,
+                g: 79,
+                b: 79
+            }; // darkslategray
+            const endColor = {
+                r: 119,
+                g: 136,
+                b: 153
+            }; // lighter darkslategray (#778899)
 
             // Interpolate between the two colors
             const currentColor = {
@@ -51,5 +63,5 @@
         });
     </script>
 </body>
-</html>
 
+</html>
