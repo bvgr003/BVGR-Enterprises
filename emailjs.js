@@ -1,6 +1,6 @@
 emailjs.init('mtlcgof4UjWYDiUEw');
 
-document.getElementById('contact-form').addEventListener('submit', function (event) {
+document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
     const name = document.getElementById('name').value;
@@ -12,11 +12,11 @@ document.getElementById('contact-form').addEventListener('submit', function (eve
             from_email: email,
             message: message,
         })
-        .then(function (response) {
+        .then(function(response) {
             alert('Message sent successfully!');
             console.log('SUCCESS!', response.status, response.text);
         })
-        .catch(function (error) {
+        .catch(function(error) {
             alert('Failed to send message. Please try again.');
             console.log('FAILED...', error);
         });

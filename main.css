@@ -43,7 +43,8 @@ img {
 }
 
 h1,
-h2, label {
+h2,
+label {
     font-size: 35px;
     color: white;
     text-align: center;

@@ -8,9 +8,10 @@ document.addEventListener("scroll", function() {
 
     fadeElement.style.background = `
         linear-gradient(
-            rgba(255, 182, 193, 1) ${fadeProgress * 33}%, /* Light Pink (Cherry Blossom) */
-            rgba(144, 238, 144, 1) ${fadeProgress * 33 + 34}%, /* Light Green (Fresh Grass) */
-            rgba(255, 255, 102, 1) ${fadeProgress * 33 + 67}% /* Soft Yellow (Sunshine) */
+            rgba(255, 140, 0, 1) ${fadeProgress * 25}%,    /* Dark Orange (Pumpkin) */
+            rgba(205, 92, 92, 1) ${fadeProgress * 25 + 25}%, /* Indian Red (Falling Leaves) */
+            rgba(255, 215, 0, 1) ${fadeProgress * 25 + 50}%, /* Gold (Golden Leaves) */
+            rgba(139, 69, 19, 1) ${fadeProgress * 25 + 75}%  /* Saddle Brown (Tree Trunks) */
         )
     `;
 });

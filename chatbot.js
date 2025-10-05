@@ -100,6 +100,6 @@ function getBotResponse(userInput) {
 // Initial message
 addMessage(`Hello, I am ${botName}! How can I assist you today?`, 'bot');
 
-document.getElementById('chat-button').addEventListener('click', function () {
+document.getElementById('chat-button').addEventListener('click', function() {
     toggleChatbot();
 });

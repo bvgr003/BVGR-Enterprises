@@ -8,7 +8,7 @@ function closeNav() {
 
 var scrollToTopBtn = document.getElementById("scrollToTop");
 
-window.onscroll = function () {
+window.onscroll = function() {
     scrollFunction();
 };
 
@@ -20,7 +20,7 @@ function scrollFunction() {
     }
 }
 
-scrollToTopBtn.onclick = function () {
+scrollToTopBtn.onclick = function() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 };

@@ -1,10 +1,10 @@
-document.addEventListener("scroll", function () {
+document.addEventListener("scroll", function() {
     const fadeElement = document.body;
-    const scrollTop = window.scrollY; 
-    const docHeight = document.documentElement.scrollHeight; 
-    const winHeight = window.innerHeight; 
-    const fadeHeight = docHeight - winHeight; 
-    const fadeProgress = Math.min(scrollTop / fadeHeight, 1); 
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight;
+    const winHeight = window.innerHeight;
+    const fadeHeight = docHeight - winHeight;
+    const fadeProgress = Math.min(scrollTop / fadeHeight, 1);
 
     fadeElement.style.background = `
         linear-gradient(
